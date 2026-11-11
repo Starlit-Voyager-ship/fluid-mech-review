@@ -53,6 +53,8 @@ padding:6px;border:1px solid #E2E6EB;border-radius:4px;background:#fff}
 strong{font-weight:600;color:#111}
 p.outline{color:var(--muted);font-size:13px;line-height:1.7;margin:2px 0 14px;
 padding:9px 12px;background:#F7F9FC;border-left:3px solid #CFD8E3}
+.tblscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 30px}
+.tblscroll .tbl{margin:0;min-width:520px}
 .tbl{width:100%;border-collapse:collapse;margin:6px 0 30px;font-size:14px}
 .tbl th{background:#F2F5FA;color:var(--chap);font-weight:600;
 border-bottom:1.5px solid var(--chap);padding:9px 8px;text-align:center;white-space:nowrap}
@@ -119,6 +121,8 @@ h2{font-size:18px;margin-top:36px}
 h3{font-size:15px;margin-top:20px}
 .qa p.a{margin-left:.6em}
 .tbl{font-size:12.5px}
+.tblscroll{margin:6px 0 24px}
+.tblscroll .tbl{min-width:460px}
 .tbl th,.tbl td{padding:6px 4px}
 button.ref{font-size:12px;margin-left:2px}
 .qfig{width:100%}
@@ -138,7 +142,7 @@ h3{page-break-after:avoid}
 <body>
 <article class="wrap">
 <h1><strong>《流体力学》考前重点复习</strong></h1>
-<table class="tbl"><tr><th>章</th><th>标题</th><th>样题分值</th><th>三套合计</th><th>重点</th></tr><tr><td>2</td><td>流体静力学</td><td>38 分</td><td>13 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>3</td><td>流体运动学</td><td>25 分</td><td>14 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>1</td><td>流体及其主要物理性质</td><td>20 分</td><td>17 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>5</td><td>相似原理与量纲分析</td><td>19 分</td><td>6 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>9</td><td>管路与孔口出流</td><td>17 分</td><td>6 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>6</td><td>不可压缩恒定总流的基本方程</td><td>15 分</td><td>5 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>7</td><td>流动阻力与水头损失</td><td>8 分</td><td>10 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>4</td><td>流体运动的基本方程</td><td>6 分</td><td>6 题</td><td><span class="stars s2">★★</span></td></tr><tr><td>8</td><td>边界层理论和绕流流动</td><td>2 分</td><td>4 题</td><td><span class="stars s2">★★</span></td></tr></table>
+<div class="tblscroll"><table class="tbl"><tr><th>章</th><th>标题</th><th>样题分值</th><th>三套合计</th><th>重点</th></tr><tr><td>2</td><td>流体静力学</td><td>38 分</td><td>13 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>3</td><td>流体运动学</td><td>25 分</td><td>14 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>1</td><td>流体及其主要物理性质</td><td>20 分</td><td>17 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>5</td><td>相似原理与量纲分析</td><td>19 分</td><td>6 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>9</td><td>管路与孔口出流</td><td>17 分</td><td>6 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>6</td><td>不可压缩恒定总流的基本方程</td><td>15 分</td><td>5 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>7</td><td>流动阻力与水头损失</td><td>8 分</td><td>10 题</td><td><span class="stars s3">★★★</span></td></tr><tr><td>4</td><td>流体运动的基本方程</td><td>6 分</td><td>6 题</td><td><span class="stars s2">★★</span></td></tr><tr><td>8</td><td>边界层理论和绕流流动</td><td>2 分</td><td>4 题</td><td><span class="stars s2">★★</span></td></tr></table></div>
 <h2><strong>第 1 章　流体及其主要物理性质</strong></h2>
 <p class="outline">大纲第 1 条：流体的定义及连续介质假设；流体的粘性、可压缩性等力学性质；流体的分类及方法；作用在流体上的力的种类、性质和计算方法；流体力学研究的对象和内容以及流体力学分析方法。</p>
 <h3><strong>1.1　流体的定义及连续介质假设</strong><span class="stars s3">★★★</span></h3>
@@ -254,7 +258,7 @@ h3{page-break-after:avoid}
 <p class="kp"><strong>量纲与单位：</strong>量纲是物理量的性质和种类，单位是度量数值大小的标准；同一量纲可有多种单位。</p>
 <p class="kp"><strong>基本量纲：</strong>[L]、[T]、[M]、[Θ] 相互独立；导出量纲由定义或物理定理推出，流体力学量可写成 L、T、M 的指数乘积。</p>
 <p class="kp">表 5.1.1　流体力学常用物理量的符号、国际单位和量纲（按 PPT 第 5 章整理）</p>
-<table class="tbl dense"><tr><th>物理量</th><th>符号</th><th>国际单位</th><th>量纲</th></tr><tr><td>长度</td><td>l</td><td>米　m</td><td>[L]</td></tr><tr><td>时间</td><td>t</td><td>秒　s</td><td>[T]</td></tr><tr><td>质量</td><td>m</td><td>千克　kg</td><td>[M]</td></tr><tr><td>温度</td><td>T</td><td>开尔文　K</td><td>[Θ]</td></tr><tr><td>面积</td><td>A</td><td>平方米　m²</td><td>[L²]</td></tr><tr><td>体积</td><td>V</td><td>立方米　m³</td><td>[L³]</td></tr><tr><td>速度</td><td>u</td><td>米/秒　m/s</td><td>[LT⁻¹]</td></tr><tr><td>加速度</td><td>a</td><td>米/秒²　m/s²</td><td>[LT⁻²]</td></tr><tr><td>角速度</td><td>ω</td><td>弧度/秒　rad/s</td><td>[T⁻¹]</td></tr><tr><td>体积流量</td><td>Q</td><td>米³/秒　m³/s</td><td>[L³T⁻¹]</td></tr><tr><td>密度</td><td>ρ</td><td>千克/米³　kg/m³</td><td>[ML⁻³]</td></tr><tr><td>力</td><td>F</td><td>牛顿　N</td><td>[MLT⁻²]</td></tr><tr><td>压强、切应力</td><td>p、τ</td><td>帕斯卡　Pa</td><td>[ML⁻¹T⁻²]</td></tr><tr><td>动力黏度</td><td>μ</td><td>帕·秒　Pa·s</td><td>[ML⁻¹T⁻¹]</td></tr><tr><td>运动黏度</td><td>ν</td><td>米²/秒　m²/s</td><td>[L²T⁻¹]</td></tr><tr><td>表面张力系数</td><td>σ</td><td>牛/米　N/m</td><td>[MT⁻²]</td></tr><tr><td>功、能量</td><td>W</td><td>焦耳　J</td><td>[ML²T⁻²]</td></tr><tr><td>功率</td><td>P</td><td>瓦特　W</td><td>[ML²T⁻³]</td></tr></table>
+<div class="tblscroll"><table class="tbl dense"><tr><th>物理量</th><th>符号</th><th>国际单位</th><th>量纲</th></tr><tr><td>长度</td><td>l</td><td>米　m</td><td>[L]</td></tr><tr><td>时间</td><td>t</td><td>秒　s</td><td>[T]</td></tr><tr><td>质量</td><td>m</td><td>千克　kg</td><td>[M]</td></tr><tr><td>温度</td><td>T</td><td>开尔文　K</td><td>[Θ]</td></tr><tr><td>面积</td><td>A</td><td>平方米　m²</td><td>[L²]</td></tr><tr><td>体积</td><td>V</td><td>立方米　m³</td><td>[L³]</td></tr><tr><td>速度</td><td>u</td><td>米/秒　m/s</td><td>[LT⁻¹]</td></tr><tr><td>加速度</td><td>a</td><td>米/秒²　m/s²</td><td>[LT⁻²]</td></tr><tr><td>角速度</td><td>ω</td><td>弧度/秒　rad/s</td><td>[T⁻¹]</td></tr><tr><td>体积流量</td><td>Q</td><td>米³/秒　m³/s</td><td>[L³T⁻¹]</td></tr><tr><td>密度</td><td>ρ</td><td>千克/米³　kg/m³</td><td>[ML⁻³]</td></tr><tr><td>力</td><td>F</td><td>牛顿　N</td><td>[MLT⁻²]</td></tr><tr><td>压强、切应力</td><td>p、τ</td><td>帕斯卡　Pa</td><td>[ML⁻¹T⁻²]</td></tr><tr><td>动力黏度</td><td>μ</td><td>帕·秒　Pa·s</td><td>[ML⁻¹T⁻¹]</td></tr><tr><td>运动黏度</td><td>ν</td><td>米²/秒　m²/s</td><td>[L²T⁻¹]</td></tr><tr><td>表面张力系数</td><td>σ</td><td>牛/米　N/m</td><td>[MT⁻²]</td></tr><tr><td>功、能量</td><td>W</td><td>焦耳　J</td><td>[ML²T⁻²]</td></tr><tr><td>功率</td><td>P</td><td>瓦特　W</td><td>[ML²T⁻³]</td></tr></table></div>
 <p class="kp"><strong>量纲和谐原理：</strong>正确反映客观规律的方程，各项量纲必须相同，可用来检验方程。</p>
 <p class="kp"><strong>π</strong><strong> 定理：</strong>n 个物理量、m 个基本量纲，可组成 n−m 个无量纲 π 项；工程中 m 通常为 3。</p>
 <div class="kpline calc-item"><p class="kp"><strong>五步法：</strong>列物理量与量纲、选 m 个量纲独立的量、构造 n−m 个 π 项、由量纲和谐解指数、整理成函数关系。<button class="ref" data-k="样题计5,模拟1计5">样题计5、模拟1计5</button></p><div class="qpanel"></div></div>
